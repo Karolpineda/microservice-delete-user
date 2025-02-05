@@ -15,9 +15,7 @@ class UserBase(BaseModel):
         orm_mode = True
 
 
-# Esquema para la actualización de un usuario
-class UserUpdate(UserBase):
-    password: Optional[str] = None  # Si deseas permitir la actualización de la contraseña
+
 
 # Esquema para los datos del usuario que se devolverán
 class UserOut(UserBase):
